@@ -1,6 +1,7 @@
 //Abraham and Cynthia project
 
 import 'package:flutter/material.dart';
+import 'screens/run_tracker.dart';
 
 void main() => runApp(MyApp());
 
@@ -52,8 +53,14 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.display1,
             ),
+            RaisedButton(
+              child: Text("Go to Tracker"),
+            onPressed: ()=>{
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>RunTracker()))
+            },)
           ],
         ),
+        
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
