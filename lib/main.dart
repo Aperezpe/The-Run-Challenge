@@ -1,6 +1,7 @@
 //Abraham and Cynthia project
 
 import 'package:flutter/material.dart';
+import 'screens/login_register.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,11 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'The Run Challenge',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Login_Register(),
     );
   }
 }
@@ -52,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.display1,
             ),
+            
           ],
         ),
       ),
